@@ -79,28 +79,7 @@ h2 {
   padding-top: 10px;
 }
 
-.teamprofiles {
-  display: flex;
-  text-align: center;
-  width: auto;
-}
 
-.teamprofiles .profile {
-  margin: 8px;
-  width: 310px;
-  line-height: 15px;
-  padding: 15px;
-  position: relative;
-
-}
-
-.traits {
-  max-width: 500px;
-  padding: 20px;
-  margin-left: 300px;
-  position: relative;
-
-}
 
 
 
@@ -152,6 +131,44 @@ h2 {
   Furthermore, by creating something simple we can market this to not only agriculture but humanitarian aid. The cheaper, easier to use solution can help identify tank storage levels in much poorer countries.<br>
   This is our major point of differentiation and something we would work on to sell our product.
 </p>
+
+<h1>Scope and Limits</h1>
+<p>As for this assignment project idea, it was mainly focused on building this cheap product as an humanitarian aid for the people near the rural areas around the globe as an easier way of monitoring their water bodies, skipping the manual labour steps through using an app instead.<br>
+  People of rural areas were the prior focus; they are the aim and the motivation behind this project to get rid of the inconveniences as one of our team members grew up in the rural area.<br>
+  The main limitations we faced was the amount of time we had for this project being 16 weeks and during the early stages of the process we chose the hardware part of the device to use a float valve instead of a pressure gauge as this is more price-friendly to manufacturers and consumers(farmers, etc). <br>
+  For the software development, for the microcontroller we decided to use the Arduino model instead of raspberry pi as we did not have python experience in our team. Another limitation was with the network range between the RF transmitter and receiver has the limit range of 100m but it can be extended using repeaters by 75m as mentioned above in ‘Plans and Progress’.<br>
+  Instead of repeaters for the cons of line of sight problems through terrains, using satellite technology was suggested and was unfortunately rejected as it is more costly and complex to execute with. In addition, farmers of rural areas will not be able to afford the fees.<br>
+  In our plans on making a 3D model prototype of the product was shut down due to the COVID lockdown. The scope of this project, we planned to upgrade IPX7 standard to IPX8 in the prototype with more funds.<br>
+  With limited time frame and lack of experience in programming the software we cannot develop a demo application however we decided to use Appery.io to build the app for both mobile and desktop versions which does not require much programming knowledge.
+</p>
+
+<h1>Tools and Technologies</h1>
+<p>
+  As this project compiles lots of different elements from IT, it requires multiple pieces of both hardware and software to get up and running. To begin a network would need to be set up to relay data between the storage unit and the user. This requires frequency management and perhaps the use of cloud servers to back up and store user data. <br>
+  Both desktop and IOS/android versions of an application would also need to be allocated so as we have working platforms for a broad range of users. There is an abundance of app builders on the market most of which require a monthly subscription to use their service. <br>
+  They do however create a bit of an easier environment to work from as some of the coding is done and drag and drop can be used. Something basic and not very expensive is Appery.io [1] which offers cloud-based web and phone applications with minimal programming knowledge required.<br>
+  This allows an online and easy to access version if we were to ever upgrade or need to work on the applications. The desktop version could also be done on Appery or could be done using a mixture of python, java and javascript. This would make the building a little more difficult but would provide ultimate flexibility in customisation and website speeds. <br>
+  We would also require some way to configure the microcontrollers themselves to have the relevant information on them to be able to run the specific code segments. This would most likely be Atmel studios as it is very powerful and requires no licence to use commercially.<br>
+  In terms of hardware we would require a cheap microcontroller to take an input from a physical device, this would most likely be an Arduino as it is a cheap alternative to other microcontrollers. Furthermore, an RF wireless transmission module would be paired with the microcontroller to transmit the signal long distances.
+</p>
+
+<h1>Testing</h1>
+<p>
+The testing of this project is the key factor that would determine its success. The project technology will be first tested mainly in water storage devices, by doing this we can get an accurate representation of the strengths and weaknesses of this new device. The second way the device will be tested is through other companies and getting their insight into its efficiency.<br>
+For the first testing, it’s important that the concepts and theory behind the hardware device matches how it works in real life situations. The technology will be tested to see if it accurately assesses and presents the water levels compared to other similar devices, these devices alongside our own will be placed in different water levels.<br>
+After the hardware components are tested, the Program software that retrieves the data will then be tested. The software should display and present the quality and levels of water that the hardware has picked up.<br>
+If the first testing meets the satisfactory requirements we can then move on to the second phase of testing where it's getting real insight feedback from individual companies. The device will be given to them for them to use for about a month, this way we can get accurate data and feedback from them.<br>
+It is important to test it out in companies so that they can always tell us the limitations of the device in ways we may not see it. The way we will find our users is through advertisement, the ad will be offering to pay companies to get feedback and try our device alongside their other devices and ways they think it differs from other devices.<br>
+Moreover, the number of companies estimated to be tested is anywhere between 5-10 since we don't want to spend too much money on a great number of companies. In summary, we will know the device is a success after many fields of testing through our own testing and other companies' feedback.
+</p>
+
+<h1>Risks</h1>
+<p>As the project requires a lot of data transmission to be done remotely it leaves an inherent risk of network failure. All data from the user is to be transferred over networks from the remote device to their phone/desktop and needs to be able to be accessed at an instant's notice.<br>
+   If in this example the network was to fail in a way that servers were down, or communication became corrupted the service would become unusable and most certainly not be available to paying customers who need the service. This is extremely relevant in our case as we aim to market the device to other third world countries overseas.<br>
+  If a device were to malfunction overseas it would make the process to fix it more difficult. If remote access were not available technicians would need to be allocated to work on the problem and in a very timely manner as this water storage management deals with the livelihoods of people overseas.<br>
+Further, at this stage in the development we are unsure as to how far the hardware components will be able to transmit data. If we were to find out they could only transmit short distances (~100s of metres) the system may not be viable as very large amounts of repeaters would be necessary to transmit data between the storage units and the user.
+</p>
+
 
 
   </div>
